@@ -10,24 +10,25 @@
 <body>
     <div class="fsc">
     <main>
-        <h1>Разнообразия между моделями представления цветов</h1>
+        
+        <h1>Differences between color representation models</h1>
         <h3>HEX</h3>
         <p>
-            Есть 3 основных цвета, из которых создаются последующие цвета. Это красный (r), зеленый (g) и синий (b). HEX-код состоит
-            из трех значений, которые показывают насыщенность. Эти значения записываются в шестнадцатеричной системе.
+            There are 3 basic colors from which subsequent colors are created. These are red (r), green (g) and blue (b). The HEX code consists
+            of three values that indicate saturation. These values are written in hexadecimal.
         </p>
         <p>
-            Возьмем для примера <b>#0000FF</b>. Здесь насыщенность красного и зеленого равна нулю, а синий - максимально насыщенный.
-            Значит у нас получится просто синий цвет, давайте посмотрим ниже:
+            Let's take <b>#0000FF</b> as an example. Here the saturation of red and green is zero, and blue is maximally saturated.
+            So we have just blue color, let's see below:
         </p>
         <div class="example" id="blue_rgb">
             #0000FF
         </div>
         <p>
-            Все знают, что если смешать красный и зеленый получится желтный цвет. Значит, чтобы его получить, подставим максимальные 
-            значения в первые 4 символа, то есть F. Значением синего же будет 00. Кстати, мы можем сократить такую запись: <b>#FFFF00</b>
-            до <b>#FF0</b>, это одинаковые вещи, то есть парсер цвета подставит F в первые два значения, потом в следующие два, и последнюю
-            пару заполняют нули. Проверим:
+            Everyone knows that if you mix red and green you get yellow. So, to get it, let’s substitute the maximum
+             values in the first 4 characters, that is, F. The value of blue will be 00. By the way, we can shorten this entry: <b>#FFFF00</b>
+             to <b>#FF0</b>, these are the same things, that is, the color parser will substitute F in the first two values, then in the next two, and the last
+             the pair are filled with zeros. Let's check:
         </p>
         <div class="example" id="yellow_rgb">
             #FFFF00 / #FF0
@@ -36,8 +37,8 @@
 
         <h3>RGB</h3>
         <p>
-            Все почти так же, как и в HEX, только вместо шестнадцатеричной системы - теперь насыщенность цвета является числом от 0 до 256.
-            К примеру, #0000FF это то же самое, что и (0, 0, 256). Зеленый цвет - это (0, 256, 0):
+            Everything is almost the same as in HEX, only instead of hexadecimal system - now the color saturation is a number from 0 to 256.
+            For example, #0000FF is the same as (0, 0, 256). The green color is (0, 256, 0):
         </p>
         <div class="example" id="green_rgb">
             (0, 256, 0)
@@ -45,14 +46,14 @@
 
         <h3>HSL</h3>
         <p>
-            HSL образуется из трех параметров. Hue - оттенок, saturate - насыщенность, Lightness - яркость, - отсюда и название, кстати. 
-            Стоит взглянуть на <a href="https://habrastorage.org/r/w1560/webt/8g/pu/fe/8gpufevs8kjhl22s8tdyfrqgzo0.png">цветовой круг</a>,
-            чтобы понять, что первый параметр - это числовое значение градуса. Оно может быть от 0 до 360 соответственно. Насыщенность - 
-            это интенсивность цвета, считается в процентах, от 0 до 100. Яркость характеризует, ну, яркость цвета, и также от 0 до 100 процентов.
+            HSL is formed from three parameters. Hue - hue, saturate - saturation, Lightness - brightness - hence the name, by the way.
+             It's worth taking a look at <a href="https://habrastorage.org/r/w1560/webt/8g/pu/fe/8gpufevs8kjhl22s8tdyfrqgzo0.png">color wheel</a>,
+             to understand that the first parameter is the numeric value of the degree. It can be from 0 to 360, respectively. Saturation -
+             this is the intensity of the color, calculated as a percentage, from 0 to 100. Brightness characterizes, well, the brightness of the color, and also from 0 to 100 percent.
         </p>
         <p>
-            HSL - это круто, потому что дает возможность изменять параметры цвета раздельно. Это очень удобно, и уже вполне реально угадать
-            цвет только благодаря свеому мозгу. Например, зеленый цвет: <b>hsl(120, 50%, 40%)</b>.
+            HSL is cool because it allows you to change color parameters separately. This is very convenient, and it’s quite possible to guess
+             color only thanks to your brain. For example, green color: <b>hsl(120, 50%, 40%)</b>.
         </p>
         <div class="example" id="green_hsl">
             hsl(120, 50%, 40%)
@@ -61,7 +62,7 @@
     </div>
 
     <footer>
-        Профиль автора на <img src="assets/github-icon.svg" width="16px" height="16px">: <a href="https://github.com/sneeek44">тык</a>
+        my profile on <img src="assets/github-icon.svg" width="16px" height="16px">: <a href="https://github.com/sneeek44">click</a>
     </footer>
 </body>
 </html>
